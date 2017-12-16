@@ -1,5 +1,7 @@
 #include "costdint.h"
 
+Belciugatele::int_b_template::int_b_template() {}
+
 Belciugatele::int_b_template::int_b_template(int x) {
   m_int = x;
 }
