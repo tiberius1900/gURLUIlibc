@@ -48,32 +48,32 @@ namespace Belciugatele {
   };
 
   typedef int_b_template<int> int_b;
-  typedef int_b_template<intmax_t> intmax_b;
-  typedef int_b_template<int8_t> int8_b;
-  typedef int_b_template<int16_t> int16_b;
-  typedef int_b_template<int32_t> int32_b;
-  typedef int_b_template<int64_t> int64_b;
-  typedef int_b_template<int_least8_t> int_least8_b;
-  typedef int_b_template<int_least16_t> int_least16_b;
-  typedef int_b_template<int_least32_t> int_least32_b;
-  typedef int_b_template<int_least64_t> int_least64_b;
-  typedef int_b_template<int_fast8_t> int_fast8_b;
-  typedef int_b_template<int_fast16_t> int_fast16_b;
-  typedef int_b_template<int_fast32_t> int_fast32_b;
-  typedef int_b_template<int_fast64_t> int_fast64_b;
-  typedef int_b_template<uintmax_t> uintmax_b;
-  typedef int_b_template<uint8_t> uint8_b;
-  typedef int_b_template<uint16_t> uint16_b;
-  typedef int_b_template<uint32_t> uint32_b;
-  typedef int_b_template<uint64_t> uint64_b;
-  typedef int_b_template<uint_least8_t> uint_least8_b;
-  typedef int_b_template<uint_least16_t> uint_least16_b;
-  typedef int_b_template<uint_least32_t> uint_least32_b;
-  typedef int_b_template<uint_least64_t> uint_least64_b;
-  typedef int_b_template<uint_fast8_t> uint_fast8_b;
-  typedef int_b_template<uint_fast16_t> uint_fast16_b;
-  typedef int_b_template<uint_fast32_t> uint_fast32_b;
-  typedef int_b_template<uint_fast64_t> uint_fast64_b;
+  typedef int_b_template<std::intmax_t> intmax_b;
+  typedef int_b_template<std::int8_t> int8_b;
+  typedef int_b_template<std::int16_t> int16_b;
+  typedef int_b_template<std::int32_t> int32_b;
+  typedef int_b_template<std::int64_t> int64_b;
+  typedef int_b_template<std::int_least8_t> int_least8_b;
+  typedef int_b_template<std::int_least16_t> int_least16_b;
+  typedef int_b_template<std::int_least32_t> int_least32_b;
+  typedef int_b_template<std::int_least64_t> int_least64_b;
+  typedef int_b_template<std::int_fast8_t> int_fast8_b;
+  typedef int_b_template<std::int_fast16_t> int_fast16_b;
+  typedef int_b_template<std::int_fast32_t> int_fast32_b;
+  typedef int_b_template<std::int_fast64_t> int_fast64_b;
+  typedef int_b_template<std::uintmax_t> uintmax_b;
+  typedef int_b_template<std::uint8_t> uint8_b;
+  typedef int_b_template<std::uint16_t> uint16_b;
+  typedef int_b_template<std::uint32_t> uint32_b;
+  typedef int_b_template<std::uint64_t> uint64_b;
+  typedef int_b_template<std::uint_least8_t> uint_least8_b;
+  typedef int_b_template<std::uint_least16_t> uint_least16_b;
+  typedef int_b_template<std::uint_least32_t> uint_least32_b;
+  typedef int_b_template<std::uint_least64_t> uint_least64_b;
+  typedef int_b_template<std::uint_fast8_t> uint_fast8_b;
+  typedef int_b_template<std::uint_fast16_t> uint_fast16_b;
+  typedef int_b_template<std::uint_fast32_t> uint_fast32_b;
+  typedef int_b_template<std::uint_fast64_t> uint_fast64_b;
   
   
 }
