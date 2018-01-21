@@ -9,7 +9,8 @@ namespace Belciugatele {
   public:
     int_b_template();
     int_b_template(int x);
-    int_b_template(int_b_template x);    
+    //int_b_template(int_b_template<T> x);
+    int_b_template<T>(const Belciugatele::int_b_template<T>& temp);
     int GetValue();
     void PutValue(int x);
     void PutValue(int_b_template x);
@@ -22,14 +23,16 @@ namespace Belciugatele {
     operator-(int_b_template x); 
     operator*(int x);
     operator*(int_b_template x); 
+    /*
     operator/(int x);
     operator/(int_b_template x);
     operator%(int x);
     operator%(int_b_template x); 
+    */
     operator++();
     operator--(); 
-    operator++(0);
-    operator--(0); 
+    //operator++(0);
+    //operator--(0); 
     operator==(int x);
     operator==(int_b_template x);
     operator!=(int x);
@@ -73,10 +76,7 @@ namespace Belciugatele {
   typedef int_b_template<std::uint_fast8_t> uint_fast8_b;
   typedef int_b_template<std::uint_fast16_t> uint_fast16_b;
   typedef int_b_template<std::uint_fast32_t> uint_fast32_b;
-  typedef int_b_template<std::uint_fast64_t> uint_fast64_b;
-  
-  
+  typedef int_b_template<std::uint_fast64_t> uint_fast64_b; 
 }
-
   
 #endif
