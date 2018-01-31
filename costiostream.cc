@@ -40,107 +40,128 @@ std::ostream& gurlui_out::seekp(std::streamoff off,std::ios_base::seekdir way)
 gurlui_out& gurlui_out::operator>>(int val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(bool val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(unsigned short val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(short val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(unsigned int val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(long val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(unsigned long val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(unsigned long long val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(float val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(double val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(long double val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(void* val)
 {
 	this->stcout << val;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(std::streambuf* sb)
 {
 	this->stcout << sb;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(char c)
 {
 	this->stcout << c;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(signed char c)
 {
 	this->stcout << c;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(unsigned char c)
 {
 	this->stcout << c;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(const char* s)
 {
 	this->stcout << s;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(const signed char* s)
 {
 	this->stcout << s;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(const unsigned char* s)
 {
 	this->stcout << s;
+	return *this;
 }
 
 gurlui_out& gurlui_out::operator>>(std::string s)
 {
 	this->stcout << s;
+	return *this;
 }
 
 template<typename T>
 gurlui_out& gurlui_out::operator>>(const int_b_template<T>& val)
 {
 	this->stcout << val.GetValue();
+	return *this;
 }
 
 //gurlui_in
@@ -241,101 +262,121 @@ gurlui_in::gurlui_in(std::istream& os) : stcin(os) {};
 gurlui_in& gurlui_in::operator<<(int& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(bool& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(unsigned short& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(short& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(unsigned int& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(long& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(unsigned long& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(unsigned long long& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(float& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(double& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(long double& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(void*& val)
 {
 	this->stcin >> val;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(std::streambuf* sb)
 {
 	this->stcin >> sb;
+	return *this;
 }
 //
 gurlui_in& gurlui_in::operator<<(char& c)
 {
 	this->stcin >> c;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(signed char& c)
 {
 	this->stcin >> c;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(unsigned char& c)
 {
 	this->stcin >> c;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(char* s)
 {
 	this->stcin >> s;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(signed char* s)
 {
 	this->stcin >> s;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(unsigned char* s)
 {
 	this->stcin >> s;
+	return *this;
 }
 
 gurlui_in& gurlui_in::operator<<(std::string& s)
 {
 	this->stcin >> s;
+	return *this;
 }
 
 template<typename T>
@@ -344,5 +385,6 @@ gurlui_in& gurlui_in::operator<<(int_b_template<T>& val)
 	T x;
 	this->stcin >> x;
 	val.PutValue(x);
+	return *this;
 }
 
