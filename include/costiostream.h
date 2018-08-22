@@ -2,7 +2,7 @@
 #define GURLUILIBC_COSTIOSTREAM_H_
 
 #include <iostream>
-#include "costdint.cc"
+#include "costdint.h"
 
 namespace Belciugatele
 {

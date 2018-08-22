@@ -2,7 +2,7 @@
 #define GURLUILIBC_COSTIOSTREAM_H_
 
 #include <iostream>
-#include "costdint.cc"
+#include "costdint.h"
 
 namespace Belciugatele
 {
@@ -12,7 +12,7 @@ namespace Belciugatele
 			std::ostream& stcout;
 			std::ostream& flush();
 			std::ostream& put(char c);
-			std::ostream& write(const char* s, 	std::streamsize n);
+			std::ostream& write(const char* s, std::streamsize n);
 			std::ostream& seekp(std::streampos pos);
 			std::ostream& seekp(std::streamoff off, std::ios_base::seekdir way);
 			std::streampos tellp();
@@ -21,7 +21,7 @@ namespace Belciugatele
 			gurlui_out& operator>>(T a);
 			template<class T>
 			gurlui_out& operator>>(const int_b_template<T>& val);
-	} bout(std::cout);
+	};
 	class gurlui_in
 	{
 		public:
@@ -51,7 +51,7 @@ namespace Belciugatele
 			gurlui_in& operator<<(T a);
 			template<class T>
 			gurlui_in& operator<<(const int_b_template<T>& val);
-	} bin(std::cin);
+	};
 }
 
 #endif

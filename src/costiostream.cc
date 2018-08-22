@@ -1,4 +1,4 @@
-#include "newcostiostream.h"
+#include "costiostream.h"
 
 using Belciugatele::gurlui_out;
 using Belciugatele::gurlui_in;
@@ -379,6 +379,7 @@ gurlui_in& gurlui_in::operator<<(std::string& s)
 	return *this;
 }
 
+
 template<typename T>
 gurlui_in& gurlui_in::operator<<(int_b_template<T>& val)
 {
@@ -387,4 +388,3 @@ gurlui_in& gurlui_in::operator<<(int_b_template<T>& val)
 	val.PutValue(x);
 	return *this;
 }
-
